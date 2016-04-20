@@ -9,17 +9,23 @@
 <body>
     <nav class="navbar">
         <div class="nav-item">1</div>
-        <div class="nav-item">2</div>
-        <div class="nav-item">3</div>
-        <div class="nav-item">4</div>
+        <a class="nav-item" onclick="navGoTo('#home');">2</a>
+        <a class="nav-item" onclick="navGoTo('#about');">3</a>
+        <a class="nav-item" onclick="navGoTo('#budget');">4</a>
+        <a class="nav-item" onclick="navGoTo('#contact');">5</a>
     </nav>
-    <div class="main">
-        <div class="main-item">
-        </div>
-        <div class="main-item">
-        </div>
-        <div class="main-item">
-        </div>
-    </div>
+    <section class="main">
+        <section id="home" class="main-item">
+        </section>
+        <section id="about" class="main-item">
+        </section>
+        <section id="budget" class="main-item">
+        </section>
+        <section id="contact" class="main-item">
+        </section>
+    </section>
 </body>
+
+<script src="source/javascript/jQuery.js"></script>
+<script src="source/javascript/navbar.js"></script>
 </html>
