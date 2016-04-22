@@ -5,7 +5,7 @@
 (function($) {
     $.fn.goTo = function() {
         $('html, body').animate({
-            scrollTop: $(this).offset().top + 'px'
+            scrollTop: ($(this).offset().top - $("nav").height() ) + 'px'
         }, 'slow');
         return this;
     }
