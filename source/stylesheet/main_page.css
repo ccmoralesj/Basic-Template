@@ -27,3 +27,7 @@ section ul li{
 .main-item{
     margin-bottom: auto;
 }
+
+.material-icons{
+    font-family: 'Material Icons';
+}

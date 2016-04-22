@@ -6,6 +6,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="source/stylesheet/main_page.css">
     <link rel="stylesheet" type="text/css" href="source/stylesheet/navbar.css">
 
@@ -26,14 +27,15 @@
         </nav>
     </div>
     <main class="main">
-        <section id="home" class="row main-item light-blue darken-3">
+        <section id="home" class="row section main-item light-blue darken-3">
             <div class="col l6 m12 s12">Section 1</div>
             <div class="col l6 m12 s12">Section 2</div>
         </section>
-        <section id="about" class="row main-item #fafafa grey lighten-5">
+        <section id="about" class="row section main-item #fafafa grey lighten-5">
             <ul class="col l5 m12 s12 collapsible" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header active">
+                        <i class="material-icons">work</i>
                         What we do
                     </div>
                     <div class="collapsible-body">
@@ -42,6 +44,7 @@
                 </li>
                 <li>
                     <div class="collapsible-header">
+                        <i class="material-icons">favorite</i>
                         Why we do it
                     </div>
                     <div class="collapsible-body">
@@ -50,6 +53,7 @@
                 </li>
                 <li>
                     <div class="collapsible-header">
+                        <i class="material-icons">pan_tool</i>
                         How we do it
                     </div>
                     <div class="collapsible-body">
@@ -59,7 +63,7 @@
             </ul>
             <div class="col l6 m12 s12">Photos</div>
         </section>
-        <section id="budget" class="row main-item light-blue darken-3">
+        <section id="budget" class="row section main-item light-blue darken-3">
             Budget
         </section>
         <section class="row parallax-container main-item">
@@ -67,9 +71,44 @@
                 <img src="source/images/medellin_city.jpg">
             </section>
         </section>
-        <section id="contact" class="row main-item #fafafa grey lighten-5">
-            <div class="col l6 m12 s12">Cool Message</div>
-            <div class="col l6 m12 s12">Form</div>
+        <section id="contact" class="section row main-item #fafafa grey lighten-5">
+            <div class="col l6 m12 s12">
+                <h5>Have something to say?</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto assumenda cumque dicta doloribus explicabo, itaque minima minus molestiae soluta sunt voluptates. A aliquam deleniti nam numquam officia quasi unde.</p>
+            </div>
+            <div class="col l5 m12 s12">
+                <form method="POST" action="#">
+
+                    <div class="input-field">
+                        <input id="full_name" type="text" name="full_name" class="validate">
+                        <label for="full_name" >Full Name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="city" type="text" name="city" class="validate">
+                        <label for="city" >City</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="email" type="email" name="email" class="validate">
+                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="phone" type="text" name="Phone"/>
+                        <label for="phone" >Phone</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="page-footer light-blue darken-3">
@@ -102,6 +141,7 @@
 <script src="source/javascript/jQuery.js"></script>
 <script src="source/javascript/jquery-ui.min.js"></script>
 <script src="source/javascript/parallax.js"></script>
+<script src="source/javascript/forms.js"></script>
 <script src="source/javascript/collapsible.js"></script>
 <script src="source/javascript/main_page.js"></script>
 <script src="source/javascript/navbar.js"></script>
