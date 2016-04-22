@@ -1,31 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="source/stylesheet/navbar.css">
+    <meta charset="UTF-8"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <link rel="stylesheet" type="text/css" href="source/stylesheet/main_page.css">
+    <link rel="stylesheet" type="text/css" href="source/stylesheet/navbar.css">
+
     <title>Basic Template</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-item">1</div>
-        <a class="nav-item" onclick="navGoTo('#home');">Home</a>
-        <a class="nav-item" onclick="navGoTo('#about');">About</a>
-        <a class="nav-item" onclick="navGoTo('#budget');">Budget</a>
-        <a class="nav-item" onclick="navGoTo('#contact');">Contact</a>
-    </nav>
-    <section class="main">
-        <section id="home" class="main-item">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper light-blue darken-3">
+                <a href="#!" class="brand-logo">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="nav-item center-align" onclick="navGoTo('#home');">Home</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#about');">About</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#budget');">Budget</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#contact');">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main class="main">
+        <section id="home" class="row main-item light-blue darken-3">
+            <div class="col l6 m12 s12">Section 1</div>
+            <div class="col l6 m12 s12">Section 2</div>
         </section>
-        <section id="about" class="main-item">
+        <section id="about" class="row main-item ">
+            <ul class="col l5 m12 s12 collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header active">
+                        What we do
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam atque aut consequatur deserunt eius harum, hic illum ipsam iste iure iusto, libero, molestias nobis quaerat quam recusandae soluta ut?</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        Why we do it
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta dolores facere hic itaque iusto laborum necessitatibus nobis non odit, officia porro quae quaerat quis soluta tempore, tenetur ut voluptates?</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        How we do it
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus asperiores consectetur ducimus eaque eum hic in molestias nesciunt officia, pariatur quae quibusdam repudiandae rerum sit sunt tempora, voluptas voluptatibus!</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="col l6 m12 s12">Photos</div>
         </section>
-        <section id="budget" class="main-item">
+        <section id="budget" class="row main-item light-blue darken-3">
+            Budget
         </section>
-        <section id="contact" class="main-item">
+        <section class="row parallax-container main-item">
+            <section class="contact-item parallax">
+                <img src="source/images/medellin_city.jpg">
+            </section>
         </section>
-    </section>
+        <section id="contact" class="row main-item">
+            <div class="col l6 m12 s12">Cool Message</div>
+            <div class="col l6 m12 s12">Form</div>
+        </section>
+    </main>
+    <footer class="page-footer main-footer light-blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">YSome info about the company</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Social Networks</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Snapchat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Author's name © 2016 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Creator website</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="source/javascript/jQuery.js"></script>
+<script src="source/javascript/jquery-ui.min.js"></script>
+<script src="source/javascript/parallax.js"></script>
+<script src="source/javascript/collapsible.js"></script>
+<script src="source/javascript/main_page.js"></script>
 <script src="source/javascript/navbar.js"></script>
 </html>
