@@ -14,7 +14,10 @@ main {
     flex: 1 0 auto;
     padding-left: 0 !important;
 }
-
+footer {
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+}
 section ul{
     margin-left: 0.438em !important;
 }
@@ -23,8 +26,4 @@ section ul li{
 }
 .main-item{
     margin-bottom: auto;
-}
-
-.main-footer{
-    margin-top: 0 !important;
 }
