@@ -18,16 +18,25 @@ footer {
     margin-top: 0 !important;
     padding-left: 0 !important;
 }
-section ul{
+section ul {
     margin-left: 0.438em !important;
 }
-section ul li{
+section ul li {
     margin-left: 0.250em !important;
 }
-.main-item{
+.main-item {
     margin-bottom: auto;
 }
 
-.material-icons{
+.material-icons {
     font-family: 'Material Icons';
+}
+
+.contact-image{
+    background-color: aqua;
+    height: 25.625em;
+}
+
+.fa{
+    font-size: x-large;
 }
