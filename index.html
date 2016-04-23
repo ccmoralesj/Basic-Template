@@ -17,9 +17,16 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper light-blue darken-3">
-                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" class="brand-logo">Logo</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="nav-item center-align" onclick="navGoTo('#home');">Home</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#home');">Home</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#about');">About</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#budget');">Budget</a></li>
+                    <li><a class="nav-item" onclick="navGoTo('#contact');">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a class="nav-item" onclick="navGoTo('#home');">Home</a></li>
                     <li><a class="nav-item" onclick="navGoTo('#about');">About</a></li>
                     <li><a class="nav-item" onclick="navGoTo('#budget');">Budget</a></li>
                     <li><a class="nav-item" onclick="navGoTo('#contact');">Contact</a></li>
@@ -152,6 +159,10 @@
 <script src="source/javascript/parallax.js"></script>
 <script src="source/javascript/forms.js"></script>
 <script src="source/javascript/collapsible.js"></script>
+<script src="source/javascript/hammer.min.js"></script>
+<script src="source/javascript/jquery.hammer.js"></script>
+<script src="source/javascript/velocity.min.js"></script>
+<script src="source/javascript/sideNav.js"></script>
 <script src="source/javascript/main_page.js"></script>
 <script src="source/javascript/navbar.js"></script>
 </html>
